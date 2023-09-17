@@ -1,6 +1,11 @@
 /* sx={{ display: 'flex', gap: '20px'}} */
-
+/* .box {
+  display: none;
+}
 .list {
+  display: none;
+}
+.btn {
   display: none;
 }
 
@@ -8,4 +13,10 @@
   .list {
     display: flex;
   }
-}
+  .btn {
+    display: block;
+  }
+  .box {
+    display: flex;
+  }
+} */
