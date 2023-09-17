@@ -5,8 +5,8 @@ import { List, ListItem,  Box, Button  } from '@mui/material';
 import css from './UserMenu.module.css'
 
 export const UserMenu = () => {
-  const dispatch = useDispatch()
-const {name, email} = useSelector(getUser)
+  const dispatch = useDispatch();
+  const { name, email } = useSelector(getUser);
   return (
     <Box className={css.box} sx={{ display: 'flex', gap: '20px'}}>
       <List className={css.list}>

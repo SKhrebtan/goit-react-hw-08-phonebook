@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 import { myFilterSlice } from './myFilterSlice/myFilterSlice';
 import { myContactsSlice } from './contactsThunk/contactsSlice';
 import { authReducer } from 'redux/auth/slice';
+import { mobileReducer } from './mobileMenu/slice';
 import storage from 'redux-persist/lib/storage';
 import {
   persistStore,
@@ -26,6 +27,7 @@ export const store = configureStore({
         contacts: myContactsSlice.reducer,
         filter: myFilterSlice.reducer,
         auth: persistReducer(authPersistConfig, authReducer),
+        menu: mobileReducer,
   },
          middleware(getDefaultMiddleware) {
     return getDefaultMiddleware({

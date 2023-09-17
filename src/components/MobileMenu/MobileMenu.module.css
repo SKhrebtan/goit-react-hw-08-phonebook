@@ -1,0 +1,42 @@
+.mobMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+  background-color: pink;
+  margin: 0;
+  height: 100vh;
+}
+
+.authBlock {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.link {
+  text-decoration: none;
+  color: orange;
+  background-color: #000;
+  border: 1px solid orange;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.logOutBtn {
+  display: block;
+  height: 40px;
+  width: 125px;
+  margin: 0 auto;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+.userInfoBlock {
+  margin: 0 auto;
+}
+.closeBtn {
+  display: inline-block;
+  margin-left: auto;
+}
