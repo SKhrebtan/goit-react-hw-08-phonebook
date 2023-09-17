@@ -14,7 +14,7 @@ const Filter = () => {
                     name="filter"
                     value={filterValue}
                  onChange={changeFilter}
-                     sx={{marginLeft: '20px'}}
+                    //  sx={{marginLeft: '20px'}}
                 />
                 
     

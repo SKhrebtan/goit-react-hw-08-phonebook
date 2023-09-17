@@ -50,22 +50,23 @@ function Form() {
 
     return (
       <form onSubmit={handleSubmit} className={css.form}>
-         <Box sx={{ padding: '20px', display: 'flex', gap: '20px', marginBottom: '20px' }}>
+        <Box className={css.box}>
         <TextField
-          id="outlined-basic"
-          label="Name"
-          variant="outlined"
-          type="text"
-          name="name"
-          value={name}
-          pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-          title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            id="outlined-basic"
+            label="Name"
+            variant="outlined"
+            type="text"
+            name="name"
+            value={name}
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
-          myid={nameFormId}
-         onChange={handleInput}/>
+            myid={nameFormId}
+            onChange={handleInput}
+            className={css.input} />
         <TextField
           id="outlined-basic"
-          label="Email"
+          label="Number"
           variant="outlined"
           type="tel"
           name="number"
@@ -74,10 +75,9 @@ function Form() {
       title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             required
             myid={numberFormId}
-          onChange={handleInput}/>
-        
-
-          <button type="submit" className={css.btn}>Add contact</button>
+            onChange={handleInput}
+          className={css.input}/>
+                 <button type="submit" className={css.btn}>Add contact</button>
           </Box>
                </form>)
 }

@@ -3,6 +3,7 @@ import { getError, getPending} from 'redux/auth/selectors';
 import { authAPI } from 'redux/auth';
 import { Box, TextField, Button } from '@mui/material';
 import { Navigate, useLocation } from 'react-router-dom';
+import css from './LoginForm.module.css'
 
 export const LoginForm = () => {
 
@@ -27,7 +28,7 @@ export const LoginForm = () => {
 
   return (
     <>  <form onSubmit={handleSubmit}>
-      <Box sx={{padding: '20px', display: 'flex', gap: '20px', marginBottom: '20px'}}>
+      <Box className={css.box}>
         <TextField id="outlined-basic" label="Email" variant="outlined" type="email" name="email" />
         <TextField id="outlined-basic" label="Password" variant="outlined" type="password" name="password" />
         <Button sx={{width: '200px', height: '56px'}} variant="contained" type="submit" disabled={isPending}>Log In</Button>

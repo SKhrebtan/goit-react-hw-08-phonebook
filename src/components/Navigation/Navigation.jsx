@@ -24,7 +24,7 @@ export const Navigation = () => {
     <nav>
       <List disablePadding sx={{ display: 'flex', gap: '20px' }}>
         <ListItem disablePadding><StyledLink to="/" >Home</StyledLink></ListItem>
-      <ListItem disablePadding> {IsLoggedIn && (<StyledLink to="/contacts">
+        <ListItem disablePadding> {IsLoggedIn && (<StyledLink to="/contacts">
           Contacts
       </StyledLink>)}</ListItem>
      

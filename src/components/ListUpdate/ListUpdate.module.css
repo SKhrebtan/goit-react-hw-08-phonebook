@@ -1,12 +1,14 @@
 .list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
   list-style: none;
+  padding: 0;
 }
 
 .item {
-  width: calc((100% - 60px) / 4);
+  /* width: calc((100% - 60px) / 4); */
   display: flex;
   gap: 16px;
   justify-content: space-between;
@@ -27,4 +29,22 @@
 .text {
   font-size: 24px;
   font-style: italic;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .list {
+    flex-direction: row;
+  }
+  .item {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .list {
+    flex-direction: row;
+  }
+  .item {
+    width: calc((100% - 40px) / 3);
+  }
 }

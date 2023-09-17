@@ -1,0 +1,13 @@
+/* sx={{padding: '20px', display: 'flex', gap: '20px', marginBottom: '20px'}}*/
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .box {
+    flex-direction: row;
+  }
+}

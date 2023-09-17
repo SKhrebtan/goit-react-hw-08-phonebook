@@ -7,7 +7,7 @@ import { getContacts, getFilter } from 'redux/auth/selectors';
 const ListUpdate = () => {
     const dispatch = useDispatch();
   const { items, isLoading, error } = useSelector(getContacts);
-  const filter = useSelector(getFilter)
+    const filter = useSelector(getFilter);
    useEffect(() => {
         dispatch(contactsAPI.fetchContactsThunk());
     }, [dispatch]);
