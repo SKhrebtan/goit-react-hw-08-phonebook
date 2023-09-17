@@ -9,7 +9,7 @@ export const UserMenu = () => {
 const {name, email} = useSelector(getUser)
   return (
     <Box sx={{ display: 'flex', gap: '20px'}}>
-      <List className={css.list} sx={{ display: 'flex', gap: '20px'}}>
+      <List className={css.list}>
       <ListItem disablePadding>Welcome, {name}</ListItem>
       <ListItem disablePadding>{email}</ListItem>
       </List>

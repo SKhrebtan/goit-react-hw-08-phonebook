@@ -1,3 +1,5 @@
+/* sx={{ display: 'flex', gap: '20px'}} */
+
 .list {
   display: none;
 }
